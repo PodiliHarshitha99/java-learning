@@ -43,7 +43,7 @@ Non-primitive data types:
 - User-defined data types----> String, Array, abstract, class, Enum
 
 Access modifiers
-Public
-Private
-Protected
-Package - private(default package)
+- Public
+- Private
+- Protected
+- Package - private(default package)
