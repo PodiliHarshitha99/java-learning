@@ -32,18 +32,28 @@ Types of variables:
 
 
 Data types
-Primitive Data types: 
+1. Primitive Data types: 
 - built-in data types --> Numeric, character, boolean
 - Numeric ---> int, long, byte (default = 0), short, float, double  (default = 0.0)
 - Char ---> char 
 - Boolean ---> boolean (default = false)
 
 
-Non-primitive data types: 
+2. Non-primitive data types: 
 - User-defined data types----> String, Array, abstract, class, Enum
 
 Access modifiers
-- Public
-- Private
-- Protected
-- Package - private(default package)
+- Public => Classes, methods, or data members that are declared as public are accessible from everywhere in the program. no restriction on the scope of public data 
+  members. The public access modifier has the widest scope among all other access modifiers. The public access modifier is specified using the keyword public.
+  
+- Private => The methods or data members declared as private are accessible only within the class in which they are declared. Any other class of the same package will 
+  not be able to access these members. The private access modifier is specified using the keyword private. private means “only visible within the enclosing class”. These 
+  modifiers in terms of application to classes, apply only to nested classes and not on top-level classes.
+  
+- Protected => The methods or data members declared as protected are accessible within the same package or subclasses in different packages. The protected access 
+  modifier is specified using the keyword protected.
+  
+- Package - private(default package) => When no access modifier is specified for a class, method, or data member – It is said to be having the default access modifier by   default. The data members, classes, or methods that are not declared using any access modifiers i.e. having default access modifiers are accessible only within the     
+  same package.
+
+
