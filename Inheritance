@@ -19,3 +19,12 @@ Key points in Inheritance:
 4. We cannot hold a Parent class object with a child class reference. We will get a Compile time error because a child class is not guaranteed to be a parent class instance 
 (i.e., it would not be safe to cast a parent class object to a child class reference).
         ChildClass cc = new ParentClass()  ----> Invalid
+
+
+
+Types of Inheritance:
+1. Single -level => Involves only one parent class and one child class.
+2. Multi-level => Involves a chain of classes where a child class inherits from a parent class, and that parent class, in turn, inherits from another class (i.e., a grandparent class). 
+   The child class can access methods and properties from both the parent and grandparent classes.
+3. Hierarchical => Sharing one parent class properties / methods to multiple child classes.
+4. Hybrid => combination of 2 or more types of inheritances.
