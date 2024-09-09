@@ -1,0 +1,21 @@
+Inheritance:
+- Acquiring properties / methods of one class (Parent class) into another class (Child class) is called Inheritance.
+-Inheritance can be acheived using 2 or more classes / two or more interfaces
+- To achieve inheritance, we need to use either extends or Implements.
+
+- Extends is used to acquire properties from a parent class into a child class and to extend an interface from another interface. 
+  However, extends is not used to acquire properties from a parent interface into a child interface.
+
+- Implements is used to acquire properties from a parent interface into a child class, not a parent class.
+
+
+Key points in Inheritance:
+1. We can hold a child class object with a parent class reference and with that reference we can call ONLY parent class methods / properties.
+        ParentClass pc = new ParentClaa();
+2. We can hold child class object with parent class reference and with thta reference we can call ONLY parent class methods / properties
+        ParentClass pc = new ChildClass ();
+3. We can hold a Child class object with a child class reference and with that reference we can call BOTH parent and child class methods / properties  
+        ChildClass cc = new ChildClass();
+4. We cannot hold a Parent class object with a child class reference. We will get a Compile time error because a child class is not guaranteed to be a parent class instance 
+(i.e., it would not be safe to cast a parent class object to a child class reference).
+        ChildClass cc = new ParentClass()  ----> Invalid
