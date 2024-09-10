@@ -1,0 +1,25 @@
+Abstraction in Java, is the process in which we show only the essential details / functionality to the user. The non-essential implementation details are not displayed to the user. 
+The Abstraction can be achieved by interfaces and abstract classes. We can achieve 100% by using Interfaces.
+
+
+Consider a real-life example of a man driving a car: 
+The man only knows that pressing the accelerators will increase the speed of a car or applying brakes will stop the car, but he does not know how on pressing the accelerator the speed is actually increasing
+He does not know about the inner mechanism of the car or the implementation of the accelerator, brakes, etc in the car. 
+This is what abstraction is. 
+
+The abstract keyword is a non-access modifier, used for classes and methods:
+Abstract class: is a restricted class that cannot be used to create objects. To access it, it must be inherited from another class.
+
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+
+Key points for Abstract class and Abstract methods:
+- Inside an Abstract class we can write both normal methods and absract methods. Writing an abstract method inside an abstract class is always optional. 
+- It is not mandatory to write atleast one abstract method inside an abstract class.
+- If we are writing an abstract method inside a normal classs then 100% that class should be declared as Abstract class. Otherwise, we get Compile Time Error.
+- We can write main(), constructors, normal methods, abstract methods, including static methods.
+- Abstract class cannot be instantiated - we cannot create an object for the abstract class
+- If we are inheriting an abstract class into a child class, the the child class needs to provide implementation (Method body) for all the abstract methods which are present in the Abstact class. 
+  Otherwise C.T.E will occur.
+- Abstract methods must be overriden in the abstract class. Otherwise we will get the Compile Time Error (CTE) in the Child class. 
+- In the child class, if we don't want to provide implementation for the abstract methods, present in the abstract class, we need to make the child class also as abstract
