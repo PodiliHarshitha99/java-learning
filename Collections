@@ -1,0 +1,16 @@
+
+Why are we using Collections?
+- Arrays in Java does  not accept any Heterogeneous data and there is no method to support for accessing the Array object. 
+- The data in the array is of fixed length. If we try to add another element above the length of the array, we get the ArrayIndexOutOfBound exception.
+- To overcome these drawbacks by using arrays, we use collection frameworks.
+Collection Framework have two root interfaces: ---> Collection and Map
+
+Collectons:
+- Any group of individual objects that are represented as a single unit is known as a Java Collection of Objects.
+- In Java, a separate framework named the “Collection Framework” has been defined in JDK 1.2 which holds all the Java Collection Classes and Interface in it. 
+- In Java, the Collection interface (java.util.Collection) and Map interface (java.util.Map) are the two main “root” interfaces of Java collection classes.
+
+
+
+
+
