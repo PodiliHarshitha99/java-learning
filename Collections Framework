@@ -94,6 +94,7 @@ Queue (present in java.util package):
 -It is an ordered list of objects with its use limited to inserting elements at the end of the list and deleting elements from the start of the list, 
 (i.e.), it follows the FIFO or the First-In-First-Out principle.
 - It has two concrete classes for declaration --> PriorityQueue and LinkedList
+- if we are creating an object for linkedlist with linkedList reference variable, then we can access complete functionality of Queue and List.
 
     PriorityQueue:
     - A PriorityQueue is used when the objects are supposed to be processed based on the priority. 
@@ -107,6 +108,10 @@ Queue (present in java.util package):
     - If multiple elements are tied for the least value, the head is one of those elements — ties are broken randomly.
     - Since PriorityQueue is not thread-safe, java provides PriorityBlockingQueue class that implements the BlockingQueue interface to use in a java multithreading environment.
     - The queue retrieval operations poll, remove, peek, and element access the element at the head of the queue.
+
+
+
+
 
 
 
