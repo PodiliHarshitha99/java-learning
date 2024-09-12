@@ -1,55 +1,116 @@
+Collection Framwork: 
+A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+It reduces programming effort by providing data structures and algorithms, which minimizes the burden on programmers to write them themselves. 
+Collection Framework have two root interfaces: ---> Collection and Map. These interfaces form the basis of the framework. 
 
-Why are we using Collections?
+Why are we using Collection frameworks?
 - Arrays in Java does  not accept any Heterogeneous data and there is no method to support for accessing the Array object. 
 - The data in the array is of fixed length. If we try to add another element above the length of the array, we get the ArrayIndexOutOfBound exception.
 - To overcome these drawbacks by using arrays, we use collection frameworks.
-Collection Framework have two root interfaces: ---> Collection and Map
 
-Collectons: 
+
+
+
+COLLECTIONS:
 - Any group of individual objects that are represented as a single unit is known as a Java Collection of Objects.
 - In Java, a separate framework named the “Collection Framework” has been defined in JDK 1.2 which holds all the Java Collection Classes and Interface in it. 
 - In Java, the Collection interface (java.util.Collection) and Map interface (java.util.Map) are the two main “root” interfaces of Java collection classes.
 
-Collection Types:
+Collections Types:
 1. List (child interface of collection)-- ArrayList, LinkedList
 2. Set -- Hash set, LinkedHash set, tree set
 3. Queue -- Priority Queue, LinkedList
 
-List: A list is an interface that provides a way to store ordered collection and maintains insertion order. 
-ArrayList: (found in "java.util" package)
-- ArrayList is a java class that implemented using the List Interface. 
-- It provides functionality of the dynamic arrays in Java.
-- It is slower than the standard arrays but helps in lot of manipulations in the array.
-- The main advantage is that it is not needed (not mandatory) to mention the size of an array at the declaration. 
+List: 
+- A list is an interface that provides a way to store ordered collection and maintains insertion order. 
+- It is an ordered collection (also known as a sequence).
+- The user can access elements by their integer index (position in the list), and search for elements in the list.
+- lists typically allow duplicate elements.
+- The List interface provides a special iterator, called a ListIterator.
+- Through the ListIterator, we can iterate the list in forward and backward directions.
+- The implementation classes of the List interface are ArrayList, LinkedList, Stack, and Vector. ArrayList and LinkedList are widely used in Java programming. 
+- The Vector class is deprecated since Java 5. 
 
-Important Features of ArrayList in Java
-- ArrayList inherits Abstract List class and implements the List interface.
-- Size of the ArrayList is increased automatically if the collection grows or shrinks if the objects are removed from the collection.
-- Java ArrayList allows us to randomly access the list.
-- ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class like Byte, Short, Integer, Long, Float, Double, Character.
-- ArrayList in Java can be seen as a vector(legacy class that is used for ) in C++.
-- ArrayList is not Synchronized. Its equivalent synchronized class in Java is Vector.
+    ArrayList: (present in "java.util" package)
+    - ArrayList is a java class that implemented using the List Interface. 
+    - It provides functionality of the dynamic arrays in Java.
+    - It is slower than the standard arrays but helps in lot of manipulations in the array.
+    - The main advantage is that it is not needed (not mandatory) to mention the size of an array at the declaration. 
+
+    Important Features of ArrayList in Java
+    - ArrayList inherits Abstract List class and implements the List interface.
+    - Size of the ArrayList is increased automatically if the collection grows or shrinks if the objects are removed from the collection.
+    - Java ArrayList allows us to randomly access the list.
+    - ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class like Byte, Short, Integer, Long, Float, Double, Character.
+    - ArrayList in Java can be seen as a vector(legacy class that is used for ) in C++.
+    - ArrayList is not Synchronized. Its equivalent synchronized class in Java is Vector.
 
 
-LinkedList: 
-- This class is an implementation of a LinkedList Data structure which is a linear data struture.
-- The elements are not stored contiguous locations and every element is a seperate object with a data part and address part.
-- The elements are linked through pointers and addresses and every element is known as Node.
-- Linked lists are preffered over the arrays because of its dynamicity and ease of insertions and deletions.
-- It is not mandatory to specify the size of an array while creating it.
-- The  drawbacks in LinkedList includes, it cannot be accessed directly instead we start from the head and follow through the link to react a node that we need to access.
+    LinkedList: 
+    - This class is an implementation of a LinkedList Data structure which is a linear data struture.
+    - The elements are not stored contiguous locations and every element is a seperate object with a data part and address part.
+    - The elements are linked through pointers and addresses and every element is known as Node.
+    - Linked lists are preffered over the arrays because of its dynamicity and ease of insertions and deletions.
+    - It is not mandatory to specify the size of an array while creating it.
+    - The  drawbacks in LinkedList includes, it cannot be accessed directly instead we start from the head and follow through the link to react a node that we need to access.
 
-Set: (found in "java.util" package)
+Set: (present in "java.util" package)
 - The Set is an interface, that extends Collection interface.
 - Unordered collection of objects and duplicate values are not stored.
-- HashSet, LinkedHash set, Tree set are the classes that extends the HashSet class and implements the Set interface.
+- Two sets instances are equal if they contain the same elements 
+- HashSet, Linked Hash set, Tree set are the classes that extends the HashSet class and implements the Set interface.
 
-HashSet:
-- 
+    HashSet:
+    - Hash Set stores the elements in Hash table which is the best-perfroming implementation.  
+    - Implements Set Interface.
+    - The underlying data structure for HashSet is Hashtable.
+    - As it implements the Set Interface, duplicate values are not allowed.
+    - Objects that you insert in HashSet are not guaranteed to be inserted in the same order. Objects are inserted based on their hash code.
+    - NULL elements are allowed in HashSet.
+    - HashSet also implements Serializable and Cloneable interfaces.
+
+    TreeSet:
+    - Most important implementations for SortedSet interface in Java
+    - It uses Tree to store the elements and does not accept null values from JDK version 7.
+    - The ordering of the elements is maintained by a set using their natural ordering whether or not an explicit comparator is provided.
+    - It can also be ordered by a Comparator provided at set creation time, depending on which constructor is used. 
+    - Tree sets are an excellent choice to store large amounts of sorted information which need to be accessed quickly.
+    - Tress sets provide faster access and retrieval time
+
+    An object is said to be comparable if and only if the corresponding class implements a Comparable interface.
+    String, StringBuffer class and all the Wrapper classes already implements Comparable interface Hence, we DO NOT get a ClassCastException. 
+    But if we are creating TreeSet of user defined classes or any Java classes which does not implements comparable interface we will get ClassCastException. 
+    To solve this problem we can either implement Comparable to our user defined class or we can pass Comparator object in Constructor while creating the set.
+
+
+    Linked-Hash-Set:
+    - The LinkedHashSet is an ordered version of HashSet that maintains a doubly-linked List across all elements. 
+    - When the iteration order is needed to be maintained, this class is used. 
+    - When iterating through a HashSet the order is unpredictable, while a LinkedHashSet lets us iterate through the elements in the order in which they were inserted. 
+    - While the LinkedHash set using the iterator, the elements will be returned in the order in which they were inserted.
+
+Queue (present in java.util package):
+-The Queue Interface extends the Collection interface is used to hold the elements about to be processed in FIFO(First In First Out) order. 
+-It is an ordered list of objects with its use limited to inserting elements at the end of the list and deleting elements from the start of the list, 
+(i.e.), it follows the FIFO or the First-In-First-Out principle.
+- It has two concrete classes for declaration --> PriorityQueue and LinkedList
+
+    PriorityQueue:
+    - A PriorityQueue is used when the objects are supposed to be processed based on the priority. 
+    - It is known that a Queue follows the First-In-First-Out algorithm but sometimes the elements of the queue are needed to be processed according to the priority,
+      that’s when the PriorityQueue comes into play.
+    - The elements of the Priority Queue are ordered according to natural ordering or by using a comparator provided at the Priority Queue construction. Depends on the constructor used.
+    - PriorityQueue doesn’t permit null.
+    - We can’t create a PriorityQueue of Objects that are non-comparable
+    - PriorityQueue are unbound queues.
+    - The head of this queue is the least element with respect to the specified ordering. 
+    - If multiple elements are tied for the least value, the head is one of those elements — ties are broken randomly.
+    - Since PriorityQueue is not thread-safe, java provides PriorityBlockingQueue class that implements the BlockingQueue interface to use in a java multithreading environment.
+    - The queue retrieval operations poll, remove, peek, and element access the element at the head of the queue.
 
 
 
-Map: 
+MAP: 
 - Map is an interface present in java.util package which represents a mapping between a key and a value. It contains unique keys.
 - It is one of the root interface for collection framework.
 - elements will be stored in the form of key-value pairs.
@@ -61,4 +122,7 @@ Map Types:
 2. Hash Table
 3. Linked Hash Map
 4. Tree Map
+
+
+
 
