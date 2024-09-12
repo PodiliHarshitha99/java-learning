@@ -7,14 +7,14 @@ public class LinkedListExp {
 	
 	void meth1() {
 		LinkedList<Object> L =new LinkedList<Object>();
-		L.add('A');//Insertion order is maintained
-		L.add(10);//Heterogeneous data is allowed
-		L.add("Java");//NULL is allowed
-		L.add(true);//Available for Java 1.2v
-		L.add(null);//default capacity is 0
-		L.add(77);//size increases by DOUBLE
-		L.add(10);//Duplicates are allowed
-		L.add(1);//not synchronized
+		L.add('A');
+		L.add(10);
+		L.add("Java");
+		L.add(true);
+		L.add(null);
+		L.add(77);
+		L.add(10);
+		L.add(1);
 		
 		System.out.println(L);
 		
