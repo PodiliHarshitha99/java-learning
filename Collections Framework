@@ -1,0 +1,64 @@
+
+Why are we using Collections?
+- Arrays in Java does  not accept any Heterogeneous data and there is no method to support for accessing the Array object. 
+- The data in the array is of fixed length. If we try to add another element above the length of the array, we get the ArrayIndexOutOfBound exception.
+- To overcome these drawbacks by using arrays, we use collection frameworks.
+Collection Framework have two root interfaces: ---> Collection and Map
+
+Collectons: 
+- Any group of individual objects that are represented as a single unit is known as a Java Collection of Objects.
+- In Java, a separate framework named the “Collection Framework” has been defined in JDK 1.2 which holds all the Java Collection Classes and Interface in it. 
+- In Java, the Collection interface (java.util.Collection) and Map interface (java.util.Map) are the two main “root” interfaces of Java collection classes.
+
+Collection Types:
+1. List (child interface of collection)-- ArrayList, LinkedList
+2. Set -- Hash set, LinkedHash set, tree set
+3. Queue -- Priority Queue, LinkedList
+
+List: A list is an interface that provides a way to store ordered collection and maintains insertion order. 
+ArrayList: (found in "java.util" package)
+- ArrayList is a java class that implemented using the List Interface. 
+- It provides functionality of the dynamic arrays in Java.
+- It is slower than the standard arrays but helps in lot of manipulations in the array.
+- The main advantage is that it is not needed (not mandatory) to mention the size of an array at the declaration. 
+
+Important Features of ArrayList in Java
+- ArrayList inherits Abstract List class and implements the List interface.
+- Size of the ArrayList is increased automatically if the collection grows or shrinks if the objects are removed from the collection.
+- Java ArrayList allows us to randomly access the list.
+- ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class like Byte, Short, Integer, Long, Float, Double, Character.
+- ArrayList in Java can be seen as a vector(legacy class that is used for ) in C++.
+- ArrayList is not Synchronized. Its equivalent synchronized class in Java is Vector.
+
+
+LinkedList: 
+- This class is an implementation of a LinkedList Data structure which is a linear data struture.
+- The elements are not stored contiguous locations and every element is a seperate object with a data part and address part.
+- The elements are linked through pointers and addresses and every element is known as Node.
+- Linked lists are preffered over the arrays because of its dynamicity and ease of insertions and deletions.
+- It is not mandatory to specify the size of an array while creating it.
+- The  drawbacks in LinkedList includes, it cannot be accessed directly instead we start from the head and follow through the link to react a node that we need to access.
+
+Set: (found in "java.util" package)
+- The Set is an interface, that extends Collection interface.
+- Unordered collection of objects and duplicate values are not stored.
+- HashSet, LinkedHash set, Tree set are the classes that extends the HashSet class and implements the Set interface.
+
+HashSet:
+- 
+
+
+
+Map: 
+- Map is an interface present in java.util package which represents a mapping between a key and a value. It contains unique keys.
+- It is one of the root interface for collection framework.
+- elements will be stored in the form of key-value pairs.
+- Keys should be unique and values can be duplicated
+- Each key-value pair is considered as single entry. 
+
+Map Types:
+1. Hash Map
+2. Hash Table
+3. Linked Hash Map
+4. Tree Map
+
