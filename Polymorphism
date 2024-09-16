@@ -9,7 +9,7 @@ Ability to perform multiple tasks with same IDENTITY.
     Method signature: Unique identification of a method based on its name and parameters. For the method overloading The method signature helps the compiler choose which method to call based on the arguments provided.
 
 - Run-time polymorphism : method overriding ----> Method overriding refres to providing a new implementation of a Parent class method in a Child class.
-    When an overriden method is called through a super class reference, Java determines which version of that method is to be executed based on the type of object being referred to, at the time the call occurs. This          determination is made at the run-time, and so it is called as Runtime polymorphism. 
+    When an overriden method is called through a super class reference, Java determines which version of that method is to be executed based on the type of object being referred to, at the time the call occurs. This determination is made at the run-time, and so it is called as Runtime polymorphism. 
     The method signature ensures that the subclass method matches the parent class method being overridden. This allows the correct method to be called based on the object type at runtime.
 
     
