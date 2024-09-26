@@ -1,3 +1,14 @@
+/* Requirements:
+- Currently using java version 16.0.2
+- Eclipse Version: 2021-06 (4.20.0)
+- MongoDB compass: version 1.44.4
+
+MongoClient is the interface between Java program and MongoDB server. It used to create connection, connect to database, retrieve collection names. Performs all the CRUD operations on Collections and documents in MongoDB
+*/
+
+
+
+
 package mongoJava;
 
 import java.awt.Cursor;
