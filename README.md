@@ -80,4 +80,25 @@ ACCESS MODIFIERS
     methods that are not declared using any access modifiers i.e. having default access modifiers are accessible only within the     
     same package.
 
+**JAVA DESIGN PATTERNS:**
+- A design pattern is a reusable solution for common problems in software design used in engineering.
+- It is not a full design ready for coding but rather a guideline or model for solving issues.
+- Design patterns can be adapted to different situations and contexts, providing flexibility in problem-solving.
+
+Types of Design Patterns:
+1. Creational Design Patterns in Java:
+- Creational Desing Patterns are a category of Design Patterns that focuses on process of Creating objects.
+- The aim is to enhance the flexibility and efficiency in Object creation. It allows the systems to remain independent of how their objects are constructed, composed and represented.
+- Helps to streamline the object creation and can lead to more maintainable and adaptable code.
+
+Singleton pattern, Factory Design Pattern, Abstract Factory pattern, Builder Pattern, Prototype Pattern.
+
+* Factory Design Pattern ---> The Factory Method Design Pattern is a creational design pattern used in software development. It provides an interface for creating objects in a superclass and allowing subclasses to specify the types of objects they create.
+(check with the code for better understanding)
+  
+
+
+
+    
+
 
