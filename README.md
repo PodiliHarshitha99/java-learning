@@ -87,7 +87,7 @@ ACCESS MODIFIERS
 
 Types of Design Patterns:
 1. Creational Design Patterns in Java:
-- Creational Desing Patterns are a category of Design Patterns that focuses on process of Creating objects.
+- Creational Design Patterns are a category of Design Patterns that focuses on process of Creating objects.
 - The aim is to enhance the flexibility and efficiency in Object creation. It allows the systems to remain independent of how their objects are constructed, composed and represented.
 - Helps to streamline the object creation and can lead to more maintainable and adaptable code.
 
@@ -95,9 +95,20 @@ Singleton pattern, Factory Design Pattern, Abstract Factory pattern, Builder Pat
 
 * Factory Design Pattern ---> The Factory Method Design Pattern is a creational design pattern used in software development. It provides an interface for creating objects in a superclass and allowing subclasses to specify the types of objects they create.
 (check with the code for better understanding)
+
+* When do we use Facotry Design Pattern?
+  --If your object creation process is complex or varies under different conditions, using a factory method can make your client code simpler and promote reusability.
+  --The Factory Method Pattern allows you to create objects through an interface or abstract class, hiding the details of concrete implementations. This reduces dependencies and makes it easier to modify or expand the 
+  system without affecting existing code.
+  --If your application needs to create different versions of a product or may introduce new types in the future, the Factory Method Pattern provides a flexible way to handle these variations by defining specific 
+  factory methods for each product type.
+  --Factories can also encapsulate configuration logic, allowing clients to customize the object creation process by providing parameters or options to the factory method.
   
 
-
+* Builder Design Patterns:
+  -- Builder pattern builds a complex object using simple objects and using a step-by-step approach.
+  -- This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+  -- A Builder class builds the final object step by step. This builder is independent of other objects.
 
     
 
