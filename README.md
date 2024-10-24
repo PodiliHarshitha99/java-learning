@@ -96,7 +96,7 @@ Singleton pattern, Factory Design Pattern, Abstract Factory pattern, Builder Pat
 * Factory Design Pattern ---> The Factory Method Design Pattern is a creational design pattern used in software development. It provides an interface for creating objects in a superclass and allowing subclasses to specify the types of objects they create.
 (check with the code for better understanding)
 
-* When do we use Facotry Design Pattern?
+-> When do we use Factory Design Pattern?
   --If your object creation process is complex or varies under different conditions, using a factory method can make your client code simpler and promote reusability.
   --The Factory Method Pattern allows you to create objects through an interface or abstract class, hiding the details of concrete implementations. This reduces dependencies and makes it easier to modify or expand the 
   system without affecting existing code.
@@ -109,6 +109,14 @@ Singleton pattern, Factory Design Pattern, Abstract Factory pattern, Builder Pat
   -- Builder pattern builds a complex object using simple objects and using a step-by-step approach.
   -- This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
   -- A Builder class builds the final object step by step. This builder is independent of other objects.
+
+
+* Singleton Design Pattern:
+  -- Ensures that a class has only 1 instance and provides global access to that instance. 
+  -- "One man's constant is another man's variable"
+
+* Abstract Facotry Pattern:
+  -- Provides an interface for creating families of related / dependent objects without specifying concrete classes
 
     
 
