@@ -118,6 +118,17 @@ Singleton pattern, Factory Design Pattern, Abstract Factory pattern, Builder Pat
 * Abstract Facotry Pattern:
   -- Provides an interface for creating families of related / dependent objects without specifying concrete classes
 
+
+
+2. Behavioral Design Pattern: Specifically concerned with communication between objects.
+
+*Strategy Design Pattern: Defines a family of algorithms, encapsulates each one and makes them interchangeable. STrategy lets the algorithm very independently from clients that use it.
+Based on 3 rules: 
+  Favour composition(has-a relation) over Inheritance (is-a relation) ---> RULE 1
+  Always code to interfaces / abstract classes. Do not code to concrete classes to achieve loose coupling in the implementation of Dynamic Polymorphism. ---> RULE 2
+  Code must be open for extension and must be closed for modification ---> RULE 3
+
+
     
 
 
