@@ -80,6 +80,21 @@ ACCESS MODIFIERS
     methods that are not declared using any access modifiers i.e. having default access modifiers are accessible only within the     
     same package.
 
+CONSTRUCTORS:
+- A constructor in Java Programming is a block of code that initializes (constructs) the state and value during object creation.
+- Constructor is a Method used to initialize objects that are called when an object of the class is created  
+- It is called every time an object with the help of a new () keyword is created.
+- Constructor name should be same as class name
+- Constructor will not be having any return type
+- We need to initialize a class object with the available constuctors present in out proogram.
+- In a java program if we are not writing ant constuctor ie., either parameterized or non-parameterized constructor then the java compiler provides default constructor.
+- Default constuctor is exactly same like non-parameterized constructor
+- The access modifier fot the default constructor provided by the compiler will be same as the access modifier of the class.
+- If the class is public then constuctor is also public. If the class is private, then constructor is also private.
+- If we declare a constructor as private, then we can restrict creating an object of our class in other classes
+- Just like void methods, we can write a return statement inside a constructor without returning anyting.
+- Constructor over loading is possible but overriding is not possible.
+
 **JAVA DESIGN PATTERNS:**
 - A design pattern is a reusable solution for common problems in software design used in engineering.
 - It is not a full design ready for coding but rather a guideline or model for solving issues.
