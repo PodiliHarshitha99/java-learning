@@ -25,6 +25,7 @@ In the main class LibraryImpl.java, I created only one instance of LibraryManage
 
 
 Book.java
+
 package singleResponsibilityPrinciple;
 public class Book {
 
@@ -63,9 +64,11 @@ public class Book {
 
 
 AddBook.java
+
 package singleResponsibilityPrinciple;
 public class AddBook {
-	private LibraryManagement library;
+	
+private LibraryManagement library;
 	public AddBook(LibraryManagement library) {
 		this.library = library;
 	}
@@ -75,9 +78,11 @@ public class AddBook {
 }
 
 RemoveBook.java
+
 package singleResponsibilityPrinciple;
+
 public class RemoveBook {
-	private LibraryManagement library;
+private LibraryManagement library;
 	public RemoveBook(LibraryManagement library) {
 		this.library = library;
 	}
@@ -88,9 +93,10 @@ public class RemoveBook {
 
 
 ListBooks.java
+
 package singleResponsibilityPrinciple;
 public class ListBooks {
-	private LibraryManagement library;
+private LibraryManagement library;
 	public ListBooks(LibraryManagement library) {
 		this.library = library;
 	}
@@ -101,11 +107,12 @@ public class ListBooks {
 
 
 LibraryManagement.java
+
 package singleResponsibilityPrinciple;
 import java.util.ArrayList;
 import java.util.List;
 public class LibraryManagement {
-	    private List<Book> books;
+	private List<Book> books;
 	    public LibraryManagement() {
 	        this.books = new ArrayList<>();
 	    }
@@ -134,6 +141,7 @@ public class LibraryManagement {
 	}
 
 LibraryImpl.java
+
 package singleResponsibilityPrinciple;
 public class LibraryImpl {
 	public static void main(String[] args) {
