@@ -10,7 +10,6 @@ Shapes.java
 
 
 package openClosePrinciple;
-
 public interface Shapes {
 	
   double calculateArea();
@@ -21,7 +20,6 @@ Circle.java
 
 
 package openClosePrinciple;
-
 public class Circle implements Shapes{
 	
 	private double radius;
@@ -67,7 +65,6 @@ Square.java
 
 
 package openClosePrinciple;
-
 public class Square implements Shapes{
 
 	private double length;
@@ -86,8 +83,10 @@ public class Square implements Shapes{
 }
 
 
-package openClosePrinciple;
+Area.java
 
+
+package openClosePrinciple;
 public class Area {
 	public double calculateArea(Shapes shape) {
 		return shape.calculateArea();
@@ -100,7 +99,6 @@ AreaCalculator.java
 
 
 package openClosePrinciple;
-
 public class AreaCalculator {
 	public static void main(String[] args) {
 		Area area = new Area();
