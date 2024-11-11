@@ -26,6 +26,7 @@ In the main class LibraryImpl.java, I created only one instance of LibraryManage
 
 Book.java
 
+
 package singleResponsibilityPrinciple;
 public class Book {
 
@@ -65,6 +66,7 @@ public class Book {
 
 AddBook.java
 
+
 package singleResponsibilityPrinciple;
 public class AddBook {
 	
@@ -72,18 +74,21 @@ private LibraryManagement library;
 	public AddBook(LibraryManagement library) {
 		this.library = library;
 	}
-	public void execute(Book book) {
+	
+ 	public void execute(Book book) {
 		library.addBook(book);
 	}
 }
 
 RemoveBook.java
 
-package singleResponsibilityPrinciple;
 
+package singleResponsibilityPrinciple;
 public class RemoveBook {
+
 private LibraryManagement library;
-	public RemoveBook(LibraryManagement library) {
+	
+ 	public RemoveBook(LibraryManagement library) {
 		this.library = library;
 	}
 	public void execute(Book book) {
@@ -94,10 +99,13 @@ private LibraryManagement library;
 
 ListBooks.java
 
+
 package singleResponsibilityPrinciple;
 public class ListBooks {
+
 private LibraryManagement library;
-	public ListBooks(LibraryManagement library) {
+	
+ 	public ListBooks(LibraryManagement library) {
 		this.library = library;
 	}
 	public void execute() {
@@ -111,34 +119,37 @@ LibraryManagement.java
 package singleResponsibilityPrinciple;
 import java.util.ArrayList;
 import java.util.List;
+
 public class LibraryManagement {
-	private List<Book> books;
-	    public LibraryManagement() {
-	        this.books = new ArrayList<>();
-	    }
-  	    public void addBook(Book book) {
-	        books.add(book);
+private List<Book> books;
+	    
+     	public LibraryManagement() {
+		this.books = new ArrayList<>();
+	}
+  	public void addBook(Book book) {
+		books.add(book);
 	        System.out.println("Added: " + book);
-	    }
-	    public void removeBook(Book book) {
-	        if (books.contains(book)) {
-	            books.remove(book);
-	            System.out.println("Removed: " + book);
-	        } else {
+	}
+	public void removeBook(Book book) {
+		if (books.contains(book)) {
+			books.remove(book);
+			System.out.println("Removed: " + book);
+		} else {
 	            System.out.println("Book not found: " + book);
 	        }
-	    }
-	    public void listBooks() {
-	        if (books.isEmpty()) {
-	            System.out.println("No books available in the library.");
-	        } else {
-	            System.out.println("Books in the Library:");
-	            for (Book book : books) {
-	                System.out.println(book);
-	            }
-	        }
-	    }
 	}
+	public void listBooks() {
+		if (books.isEmpty()) {
+			System.out.println("No books available in the library.");
+	        } else {
+		System.out.println("Books in the Library:");
+		
+  		for (Book book : books) {
+			System.out.println(book);
+		}
+		}
+	}
+}
 
 LibraryImpl.java
 
