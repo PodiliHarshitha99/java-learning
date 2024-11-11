@@ -93,6 +93,7 @@ Area.java
 package openClosePrinciple;
 
 public class Area {
+
 	public double calculateArea(Shapes shape) {
 		return shape.calculateArea();
 
@@ -106,9 +107,9 @@ AreaCalculator.java
 package openClosePrinciple;
 
 public class AreaCalculator {
-	public static void main(String[] args) {
-		Area area = new Area();
-
+	
+ 	public static void main(String[] args) {
+ 		Area area = new Area();
 		Shapes circle = new Circle(5);
 		Shapes rectangle = new Rectangle(4, 6);
 		Shapes triangle = new Square(4);
