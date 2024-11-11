@@ -145,17 +145,21 @@ LibraryImpl.java
 package singleResponsibilityPrinciple;
 public class LibraryImpl {
 	public static void main(String[] args) {
+		
 		LibraryManagement library = new LibraryManagement();
-     	        Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "1234567890");
+     	    
+					Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "1234567890");
 	        Book book2 = new Book("1984", "George Orwell", "0987654321");
 	        Book book3 = new Book("To Kill a Mockingbird", "Harper Lee", "1122334455");
-       	        AddBook addBookAction = new AddBook(library);
+       	  
+					AddBook addBookAction = new AddBook(library);
 	        //RemoveBook removeBookAction = new RemoveBook(library);
 	        //ListBooks listBooksAction = new ListBooks(library);    
-	        addBookAction.execute(book1);
+	        
+				 	addBookAction.execute(book1);
 	        addBookAction.execute(book2);
 	        addBookAction.execute(book3);
-    	        //listBooksAction.execute();
+    	    //listBooksAction.execute();
         	//removeBookAction.execute(book2);        
 	        //listBooksAction.execute();
 	    }
